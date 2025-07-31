@@ -1,0 +1,39 @@
+@use "/src/styles/utils";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  margin-top: pxToRem(25px);
+  @include container();
+}
+
+.logo {
+  img {
+    width: clamp(118px, 20vw, 213px);
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    list-style: none;
+    gap: pxToRem(55px);
+  }
+
+  &__item {
+    font-size: utils.pxToRem(20px);
+    cursor: pointer;
+    color: $color-white;
+  }
+}
+
+.fixed__navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: transparent;
+}

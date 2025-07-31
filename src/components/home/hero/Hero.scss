@@ -1,0 +1,63 @@
+@use "/src/styles/utils";
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  min-height: pxToRem(900px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  color: $color-white;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: pxToRem(150px);
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8));
+  }
+
+  &.bg-home {
+    background-image: url("https://res.cloudinary.com/db1tp6eqg/image/upload/v1753924151/neom-rVC6O_gDE0Q-unsplash_1_2_cymq7q.png");
+  }
+
+  &__title,
+  &__content {
+    @include container();
+  }
+
+  &__title {
+    text-align: center;
+    max-width: pxToRem(520px);
+
+    h1 {
+      margin: 0;
+      font-size: pxToRem(78px);
+    }
+
+    p {
+      font-size: pxToRem(20px);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: pxToRem(330px);
+
+    h3 {
+      font-size: pxToRem(28px);
+    }
+  }
+}

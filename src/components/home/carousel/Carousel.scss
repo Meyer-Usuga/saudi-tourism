@@ -1,0 +1,22 @@
+@use "/src/styles/utils";
+
+.carousel {
+  background-color: $color-bg;
+
+  &__collection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: pxToRem(150px);
+    @include container();
+  }
+
+  &__item {
+    margin-top: pxToRem(25px);
+    height: 100%;
+
+    img {
+      width: clamp(180px, 15vw, 30px);
+    }
+  }
+}

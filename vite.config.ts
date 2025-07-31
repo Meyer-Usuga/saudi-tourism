@@ -15,8 +15,9 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@pages": path.resolve(__dirname, "src/pages"),
+      "@pages": path.resolve(__dirname, "./src/pages"),
       "@styles": path.resolve(__dirname, "src/styles"),
+      "@components": path.resolve(__dirname, "./src/components"),
     },
   },
 });

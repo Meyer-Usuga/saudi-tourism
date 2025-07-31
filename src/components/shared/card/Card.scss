@@ -1,0 +1,49 @@
+@use "/src/styles/utils";
+
+.card-container {
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: pxToRem(300px);
+  color: $color-white;
+  overflow: hidden;
+  padding: pxToRem(24px);
+  border-radius: pxToRem(32px);
+
+  &__header {
+    h4 {
+      font-size: pxToRem(26px);
+      margin: 0;
+    }
+
+    p {
+      font-size: pxToRem(16px);
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    gap: pxToRem(16px);
+
+    h5,
+    p {
+      margin: 0;
+    }
+
+    img {
+      max-height: pxToRem(60px);
+      max-width: pxToRem(60px);
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+}
