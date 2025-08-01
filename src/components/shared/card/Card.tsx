@@ -1,9 +1,10 @@
+import Avatar from "@components/shared/avatar/Avatar";
 import "./Card.scss";
 
 type Avatar = {
-  icon: string;
   name: string;
-  info: string;
+  info: string | undefined;
+  icon: string;
 };
 
 type CardBody = {
@@ -34,19 +35,7 @@ const Card = ({ content }: Props) => {
           <p>{card.subtitle}</p>
         </div>
 
-        {card.avatar && (
-          <div className="card__footer">
-            <img
-              src={card.avatar.icon}
-              alt="Avatar of the person"
-              loading="lazy"
-            />
-            <div className="card__avatar-info">
-              <h5>{card.avatar.name}</h5>
-              <p>{card.avatar.info}</p>
-            </div>
-          </div>
-        )}
+        {card.avatar && <Avatar {...card.avatar} />}
       </article>
     </div>
   );

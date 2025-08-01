@@ -1,0 +1,46 @@
+@use "/src/styles/utils";
+
+.banner-container {
+  margin-top: pxToRem(90px);
+  margin-bottom: pxToRem(90px);
+  @include container();
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  width: 100%;
+
+  &.bg-arabia {
+    background-image: url("https://res.cloudinary.com/db1tp6eqg/image/upload/v1754022585/bg-3_huh4xc.png");
+  }
+
+  &__title {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    margin-left: pxToRem(60px);
+    max-width: pxToRem(320px);
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 50%;
+    margin-right: pxToRem(60px);
+    transition: transform 0.3s ease, background 0.3s ease;
+
+    &:hover {
+      transform: translateX(5px);
+    }
+  }
+}

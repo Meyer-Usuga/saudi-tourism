@@ -1,0 +1,19 @@
+@use "/src/styles/utils";
+
+.avatar {
+  display: flex;
+  align-items: center;
+  gap: pxToRem(16px);
+
+  h5,
+  p {
+    margin: 0;
+  }
+
+  img {
+    max-height: pxToRem(60px);
+    max-width: pxToRem(60px);
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}

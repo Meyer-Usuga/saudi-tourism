@@ -1,0 +1,51 @@
+@use "/src/styles/utils";
+
+.review {
+  min-height: pxToRem(800px);
+  position: relative;
+  background: none;
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.95) 0%,
+      rgba(0, 0, 0, 0) 20%,
+      rgba(0, 0, 0, 0) 75%,
+      rgba(0, 0, 0, 0.95) 100%
+    ),
+    url("https://res.cloudinary.com/db1tp6eqg/image/upload/v1754019858/bg-2_jkyxgi.png")
+      no-repeat center/cover;
+  margin-top: pxToRem(150px);
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include container();
+
+    h1 {
+      margin: 0;
+      font-size: pxToRem(86px);
+      line-height: 0.5;
+      font-weight: 500;
+      font-family: "Imperial Script", cursive;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: pxToRem(66px);
+    }
+  }
+
+  &__content {
+    @include container();
+
+    p {
+      font-weight: 300;
+      font-size: pxToRem(18px);
+    }
+  }
+}

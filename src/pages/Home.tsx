@@ -1,5 +1,7 @@
 import Carousel from "@components/home/carousel/Carousel";
 import Hero from "@components/home/hero/Hero";
+import Review from "@components/home/review/Review";
+import Banner from "@components/shared/banner/Banner";
 import Gallery from "@components/shared/gallery/Gallery";
 import React from "react";
 
@@ -23,11 +25,19 @@ const Home = () => {
     backgroundImage: "bg-home",
   };
 
+  const bannerProps = {
+    title: "Explore Saudi Arabia",
+    backgroundImage: "bg-arabia",
+    showButton: true,
+  };
+
   return (
     <React.Fragment>
       <Hero {...heroProps} />
       <Carousel />
       <Gallery />
+      <Review />
+      <Banner {...bannerProps} />
     </React.Fragment>
   );
 };

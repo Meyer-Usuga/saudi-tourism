@@ -95,7 +95,6 @@ const Gallery = () => {
           </div>
         ))}
       </div>
-      <span className="gallery__more">See more</span>
     </section>
   );
 };
