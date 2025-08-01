@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import { StaticNavbar } from "@components/shared/navbar";
 import Home from "@pages/Home";
 import "./App.scss";
+import { Footer } from "@components/shared/footer";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
+      <Footer />
     </React.Fragment>
   );
 };

@@ -1,0 +1,61 @@
+@use "/src/styles/utils";
+
+.footer-container {
+  background: $color-gray;
+}
+
+.footer {
+  display: grid;
+  align-items: center;
+  height: 30vh;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr auto;
+  height: auto;
+  padding: pxToRem(40px);
+  @include container();
+
+  img {
+    cursor: pointer;
+  }
+
+  &__links {
+    gap: utils.pxToRem(24px);
+    display: flex;
+    font-size: pxToRem(18px);
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      cursor: pointer;
+      color: $color-white;
+      margin-top: pxToRem(6px);
+    }
+
+    li:hover {
+      color: $color-primary;
+    }
+
+    li:first-child {
+      font-weight: bold;
+      pointer-events: none;
+      color: $color-white;
+    }
+
+    a {
+      all: inherit;
+      text-decoration: none;
+    }
+
+    @include media-ltmd() {
+      flex-direction: column;
+    }
+  }
+
+  @include media-ltmd() {
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
+}

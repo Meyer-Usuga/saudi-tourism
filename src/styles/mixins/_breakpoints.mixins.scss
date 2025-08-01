@@ -1,4 +1,4 @@
-@use "../variables/breakpoints.variables";
+@use "../variables/breakpoints.variables" as variables;
 
 @function media-max-width-correction($breakpoint) {
   @return $breakpoint - 0.1px;
