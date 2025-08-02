@@ -24,11 +24,11 @@ const Gallery = () => {
           "https://res.cloudinary.com/db1tp6eqg/image/upload/v1753935163/card-1-bg_z5mmzp.png",
       },
       {
-        title: "Hisma Desert",
+        title: "Kafd World Trade Centre, Riyadh.",
         subtitle:
-          "The Hisma desert is a true marvel of nature, and several desert oasis.",
+          "The Towering Structure stands as a testament to Saudi Arabia’s vision for a thriving business hub.",
         avatar: {
-          name: "Wazeem Al Mulk",
+          name: "Benjamin Voros",
           info: "Traveler",
           icon: "https://res.cloudinary.com/db1tp6eqg/image/upload/v1753939854/card-2-icon_exc6xg.svg",
         },
@@ -36,11 +36,11 @@ const Gallery = () => {
           "https://res.cloudinary.com/db1tp6eqg/image/upload/v1753939853/card-2-bg_j3q2wh.png",
       },
       {
-        title: "Hisma Desert",
+        title: "Al Qarah Mountain",
         subtitle:
-          "The Hisma desert is a true marvel of nature, and several desert oasis.",
+          "The Mountain’s distractive rocks formations inviting adventures to explore its hidden treasure.",
         avatar: {
-          name: "Wazeem Al Mulk",
+          name: "John Towner",
           info: "Traveler",
           icon: "https://res.cloudinary.com/db1tp6eqg/image/upload/v1753939856/card-3-icon_nmjemb.svg",
         },
@@ -48,23 +48,23 @@ const Gallery = () => {
           "https://res.cloudinary.com/db1tp6eqg/image/upload/v1753939855/card-3-bg_cbhl1u.png",
       },
       {
-        title: "Hisma Desert",
+        title: "The best of Tabuk",
         subtitle:
-          "The Hisma desert is a true marvel of nature, and several desert oasis.",
+          "Tabuk also spelled Tabouk, the capital city of the Tabuk Region in northwestern Saudi Arabia.",
         avatar: {
-          name: "Wazeem Al Mulk",
-          info: "Traveler",
+          name: "Jonatan Pie",
+          info: "Influencer",
           icon: "https://res.cloudinary.com/db1tp6eqg/image/upload/v1753939859/card-4-icon_gnb5ud.svg",
         },
         background:
           "https://res.cloudinary.com/db1tp6eqg/image/upload/v1753939858/card-4-bg_xwfx42.png",
       },
       {
-        title: "Hisma Desert",
+        title: "AlUIa",
         subtitle:
-          "The Hisma desert is a true marvel of nature, and several desert oasis.",
+          "AIUIa is located deep in the desert in the northwest of Saudi Arabia",
         avatar: {
-          name: "Wazeem Al Mulk",
+          name: "Garrett Parker",
           info: "Traveler",
           icon: "https://res.cloudinary.com/db1tp6eqg/image/upload/v1753939861/card-5-icon_zeugwm.svg",
         },
@@ -72,11 +72,11 @@ const Gallery = () => {
           "https://res.cloudinary.com/db1tp6eqg/image/upload/v1753939861/card-5-bg_wjub5t.png",
       },
       {
-        title: "Hisma Desert",
+        title: "The best things To do in Taif",
         subtitle:
-          "The Hisma desert is a true marvel of nature, and several desert oasis.",
+          "Taif is a city and governorate in the Makkah Region of Saudi Arabia.",
         avatar: {
-          name: "Wazeem Al Mulk",
+          name: "Cristina Gottardi",
           info: "Traveler",
           icon: "https://res.cloudinary.com/db1tp6eqg/image/upload/v1753939865/card-6-icon_kapijh.svg",
         },
