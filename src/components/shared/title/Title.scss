@@ -1,0 +1,20 @@
+@use "/src/styles/utils";
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include container();
+
+  h1 {
+    font-size: pxToRem(26px);
+    margin-bottom: 0;
+  }
+
+  p {
+    text-align: center;
+    font-size: pxToRem(16px);
+    max-width: pxToRem(550px);
+  }
+}

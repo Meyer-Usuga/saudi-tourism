@@ -20,21 +20,23 @@ type Content = {
 
 type Props = {
   content: Content;
+  className?: string;
 };
 
-const Card = ({ content }: Props) => {
+const Card = ({ content, className }: Props) => {
   const { card } = content;
   return (
-    <div className="card-container">
+    <div className={`card-container ${className}`}>
       <article
         className="card"
         style={{ backgroundImage: `url(${card.background})` }}
       >
-        <div className="card__header">
-          <h4>{card.title}</h4>
-          <p>{card.subtitle}</p>
-        </div>
-
+        {card.title && card.subtitle && (
+          <div className="card__header">
+            <h4>{card.title}</h4>
+            <p>{card.subtitle}</p>
+          </div>
+        )}
         {card.avatar && <Avatar {...card.avatar} />}
       </article>
     </div>

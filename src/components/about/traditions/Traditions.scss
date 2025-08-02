@@ -1,0 +1,18 @@
+@use "/src/styles/utils";
+
+.traditions {
+  display: flex;
+  flex-direction: column;
+  gap: pxToRem(30px);
+  @include container();
+
+  &__title {
+    font-size: pxToRem(26px);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: pxToRem(80px);
+  }
+}

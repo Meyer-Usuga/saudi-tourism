@@ -21,7 +21,9 @@ const Navbar = () => {
           <li className="nav__item" onClick={() => navigate("/destinations")}>
             Destinations
           </li>
-          <li className="nav__item">About</li>
+          <li className="nav__item" onClick={() => navigate("/about")}>
+            About
+          </li>
         </ul>
       </nav>
     </header>

@@ -1,34 +1,33 @@
-import Essentials from "@components/destinations/essentials/Essentials";
+import Traditions from "@components/about/traditions/Traditions";
 import Hero from "@components/home/hero/Hero";
 import Banner from "@components/shared/banner/Banner";
 import Contact from "@components/shared/contact/Contact";
-import Gallery from "@components/shared/gallery/Gallery";
+import Payments from "@components/about/payments/Payments";
 import React from "react";
 
-const Destinations = () => {
+const About = () => {
   const heroProps = {
-    title: "Destinations",
-    subtitle:
-      "Saudi Arabia is rich in heritage and history. The country is home to hundreds of historically important sites.",
+    title: "About Us",
+    subtitle: "Discover the country's hidden gems and breathtaking landscapes",
     content: [],
-    backgroundImage: "bg-destinations",
+    backgroundImage: "bg-about",
   };
 
   const bannerProps = {
     title: "Made To Change NEOM",
-    backgroundImage: "bg-ocean",
+    backgroundImage: "bg-desert",
     showButton: true,
   };
 
   return (
     <React.Fragment>
       <Hero {...heroProps} />
-      <Gallery />
-      <Essentials />
+      <Traditions />
+      <Payments />
       <Contact />
       <Banner {...bannerProps} />
     </React.Fragment>
   );
 };
 
-export default Destinations;
+export default About;

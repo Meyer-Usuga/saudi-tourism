@@ -1,7 +1,14 @@
 import { Card } from "@components/shared/card";
+import { Title } from "@components/shared/title";
 import "./Gallery.scss";
 
 const Gallery = () => {
+  const titleContent = {
+    title: "Best Destinations",
+    subtitle:
+      "Explore the enchanting landscapes of saudi Arabia, from the breathtaking deserts to the stunning coastal shores.",
+  };
+
   const content = {
     cards: [
       {
@@ -81,13 +88,8 @@ const Gallery = () => {
 
   return (
     <section className="gallery">
-      <div className="gallery__title">
-        <h2>Best Destinations</h2>
-        <p>
-          Explore the enchanting landscapes of saudi Arabia, from the
-          breathtaking deserts to the stunning coastal shores.
-        </p>
-      </div>
+      <Title {...titleContent} />
+
       <div className="gallery__collection">
         {content.cards.map((card, index) => (
           <div className={`gallery__item picture-${index}`} key={index}>

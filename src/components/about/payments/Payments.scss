@@ -1,0 +1,32 @@
+@use "/src/styles/utils";
+
+.payments {
+  margin-top: pxToRem(120px);
+  @include container();
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: pxToRem(350px);
+    gap: pxToRem(60px);
+    align-items: center;
+  }
+
+  &__item {
+    background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(67, 67, 67, 0.38) 100%
+    );
+    color: $color-white;
+    border-radius: 10px;
+    padding: pxToRem(30px);
+    font-size: pxToRem(16px);
+    min-height: pxToRem(250px);
+    border: 1px solid $color-gray-light;
+
+    h2 {
+      margin: 0;
+    }
+  }
+}

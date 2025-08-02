@@ -25,6 +25,10 @@
     background-image: url("https://res.cloudinary.com/db1tp6eqg/image/upload/v1754027072/bg-5_h59rsw.png");
   }
 
+  &.bg-desert {
+    background-image: url("https://res.cloudinary.com/db1tp6eqg/image/upload/v1754110120/neom-wTmGtmGQCjQ-unsplash_1_w7idm0.png");
+  }
+
   &__title {
     font-size: clamp(1.5rem, 4vw, 3rem);
     margin-left: pxToRem(60px);
