@@ -1,6 +1,7 @@
 import Essentials from "@components/destinations/Essentials/Essentials";
 import Hero from "@components/home/hero/Hero";
 import Banner from "@components/shared/banner/Banner";
+import Contact from "@components/shared/contact/Contact";
 import Gallery from "@components/shared/gallery/Gallery";
 import React from "react";
 
@@ -24,6 +25,7 @@ const Destinations = () => {
       <Hero {...heroProps} />
       <Gallery />
       <Essentials />
+      <Contact />
       <Banner {...bannerProps} />
     </React.Fragment>
   );
