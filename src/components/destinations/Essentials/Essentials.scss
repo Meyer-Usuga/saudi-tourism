@@ -1,0 +1,58 @@
+@use "/src/styles/utils";
+
+.essentials-container {
+  display: flex;
+  flex-direction: column;
+  gap: pxToRem(30px);
+  margin-top: pxToRem(130px);
+  @include container();
+}
+
+.essentials-collections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: pxToRem(18px);
+}
+
+.essential {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: pxToRem(18px);
+  width: 100%;
+  max-width: pxToRem(625px);
+  height: auto;
+  aspect-ratio: 600 / 431;
+
+  &.bg-first {
+    background-image: url("https://res.cloudinary.com/db1tp6eqg/image/upload/v1754100418/neom-UuzkCF-jmPY-unsplash_1_v4iody.svg");
+  }
+
+  &.bg-second {
+    background-image: url("https://res.cloudinary.com/db1tp6eqg/image/upload/v1754100418/neom-EbIvcXzgU4s-unsplash_1_grpkyk.svg");
+  }
+
+  &__card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: pxToRem(16px);
+    max-width: pxToRem(500px);
+    min-height: pxToRem(50px);
+    border-radius: pxToRem(16px);
+    margin-bottom: pxToRem(30px);
+    background: rgba(255, 255, 255, 0.069);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    p {
+      margin: 0;
+      font-size: pxToRem(26px);
+    }
+  }
+}

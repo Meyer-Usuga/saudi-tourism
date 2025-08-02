@@ -1,0 +1,48 @@
+@use "/src/styles/utils";
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.3s ease, background 0.3s ease;
+
+  &:hover {
+    transform: translateX(5px);
+  }
+
+  //sizes
+
+  &.large {
+    span {
+      font-size: pxToRem(18px);
+    }
+
+    img {
+      max-width: pxToRem(80px);
+      max-height: pxToRem(80px);
+    }
+  }
+
+  &.small {
+    span {
+      font-size: pxToRem(16px);
+    }
+    img {
+      max-width: pxToRem(40px);
+      max-height: pxToRem(40px);
+    }
+  }
+
+  //types
+
+  &.primary {
+    background: $color-white;
+  }
+
+  &.secondary {
+    background: none;
+  }
+}

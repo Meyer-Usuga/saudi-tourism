@@ -1,3 +1,4 @@
+import Button from "@components/shared/button/Button";
 import "./Banner.scss";
 
 type Props = {
@@ -15,12 +16,13 @@ const Banner = (props: Props) => {
         <h1 className="banner__title">{title}</h1>
 
         {showButton && (
-          <button className="banner__button">
+          <Button type="secondary" size="large">
             <img
               src="https://res.cloudinary.com/db1tp6eqg/image/upload/v1754022195/arrow_z3jr2d.svg"
-              alt="Redirect button"
+              alt="Button icon"
+              style={{ marginRight: "30px" }}
             />
-          </button>
+          </Button>
         )}
       </div>
     </section>
