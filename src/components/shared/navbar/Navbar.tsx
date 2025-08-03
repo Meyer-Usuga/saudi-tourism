@@ -10,6 +10,7 @@ const Navbar = () => {
         <img
           src="https://res.cloudinary.com/db1tp6eqg/image/upload/v1753923743/logo_nyomzp.svg"
           alt="Web logo"
+          onClick={() => navigate("/")}
         />
       </div>
 

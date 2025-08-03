@@ -15,4 +15,8 @@
     flex-direction: column;
     gap: pxToRem(80px);
   }
+
+  &__image {
+    height: pxToRem(350px);
+  }
 }
