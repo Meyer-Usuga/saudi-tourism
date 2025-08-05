@@ -1,22 +1,23 @@
-@use "/src/styles/utils";
-
 .carousel {
   background-color: $color-bg;
 
   &__collection {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: pxToRem(24px);
+    justify-items: center;
     align-items: center;
-    justify-content: space-between;
-    max-height: pxToRem(150px);
+    margin-bottom: 25px;
+    margin-top: pxToRem(25px);
     @include container();
   }
 
   &__item {
     margin-top: pxToRem(25px);
-    height: 100%;
+    text-align: center;
 
     img {
-      width: clamp(180px, 15vw, 30px);
+      width: clamp(150px, 15vw, 180px);
     }
   }
 }

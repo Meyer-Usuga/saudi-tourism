@@ -35,6 +35,25 @@
       "picture-0 picture-4 picture-2"
       "picture-3 picture-4 picture-5";
     @include container();
+
+    @include media-ltmd() {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "picture-0 picture-1"
+        "picture-2 picture-3"
+        "picture-4 picture-5";
+    }
+
+    @include media-xs() {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "picture-0"
+        "picture-1"
+        "picture-2"
+        "picture-3"
+        "picture-4"
+        "picture-5";
+    }
   }
 
   .picture-0 {

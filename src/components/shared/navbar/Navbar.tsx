@@ -1,8 +1,19 @@
 import { useNavigate } from "react-router-dom";
+import { Button } from "@components/shared/button";
 import "./Navbar.scss";
+import { useEffect } from "react";
 
-const Navbar = () => {
+type Props = {
+  isOpen: boolean;
+  setIsOpen: (open: boolean) => void;
+};
+
+const Navbar = ({ isOpen, setIsOpen }: Props) => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location.pathname]);
 
   return (
     <header className="header">
@@ -14,7 +25,18 @@ const Navbar = () => {
         />
       </div>
 
-      <nav className="nav">
+      <Button
+        className={`burger ${isOpen ? "active" : ""}`}
+        type="secondary"
+        size="small"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </Button>
+
+      <nav className={`nav ${isOpen ? "open" : ""}`}>
         <ul className="nav__list">
           <li className="nav__item" onClick={() => navigate("/")}>
             Home

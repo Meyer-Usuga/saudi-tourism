@@ -21,5 +21,11 @@
       font-size: pxToRem(24px);
       font-weight: 600;
     }
+
+    @include media-xs() {
+      flex-direction: column;
+      gap: pxToRem(16px);
+      align-items: start;
+    }
   }
 }

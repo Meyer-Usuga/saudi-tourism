@@ -17,6 +17,8 @@
 }
 
 .nav {
+  transition: background 0.3s ease;
+
   &__list {
     display: flex;
     list-style: none;
@@ -28,6 +30,33 @@
     cursor: pointer;
     color: $color-white;
   }
+
+  @include media-ltmd() {
+    display: none;
+    position: absolute;
+    background: transparent;
+    top: 99%;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    transition: max-height 0.4s ease, background-color 0.4s ease;
+
+    &.open {
+      display: flex;
+      max-height: 300px;
+      justify-content: center;
+      text-align: center;
+      background-color: $color-bg;
+    }
+
+    .nav__list {
+      flex-direction: column;
+      gap: pxToRem(20px);
+      padding: pxToRem(20px);
+    }
+  }
 }
 
 .fixed__navbar {
@@ -36,5 +65,42 @@
   left: 0;
   width: 100%;
   z-index: 100;
-  background: transparent;
+
+  @include media-ltmd() {
+    &.active {
+      background-color: $color-bg;
+    }
+  }
+}
+
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+
+  span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: $color-white;
+    border-radius: 3px;
+    transition: 0.3s;
+  }
+
+  &.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+  &.active span:nth-child(2) {
+    opacity: 0;
+  }
+  &.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+
+  @include media-ltmd() {
+    display: flex;
+  }
 }

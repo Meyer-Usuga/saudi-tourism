@@ -1,6 +1,11 @@
+@use "/src/styles/utils";
 .columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: pxToRem(60px);
   align-items: center;
+
+  @include media-ltmd() {
+    grid-template-columns: 1fr;
+  }
 }

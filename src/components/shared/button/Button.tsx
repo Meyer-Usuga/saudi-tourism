@@ -4,12 +4,25 @@ type Props = {
   type: "primary" | "secondary";
   size: "small" | "large";
   styles?: React.CSSProperties;
+  className?: string;
   children: React.ReactNode;
+  onClick?: () => void;
 };
 
-const Button = ({ type, size, children, styles }: Props) => {
+const Button = ({
+  type,
+  size,
+  children,
+  className,
+  styles,
+  onClick,
+}: Props) => {
   return (
-    <button className={`button ${type} ${size}`} style={styles}>
+    <button
+      className={`button ${className} ${type} ${size}`}
+      style={styles}
+      onClick={onClick}
+    >
       {children}
     </button>
   );

@@ -16,6 +16,7 @@
 
   img {
     cursor: pointer;
+    width: clamp(118px, 20vw, 213px);
   }
 
   &__links {
@@ -57,5 +58,7 @@
   @include media-ltmd() {
     align-items: center;
     grid-template-columns: 1fr;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
