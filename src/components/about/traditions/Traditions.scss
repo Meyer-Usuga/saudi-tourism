@@ -8,6 +8,10 @@
 
   &__title {
     font-size: pxToRem(26px);
+
+    @include media-ltmd() {
+      text-align: center;
+    }
   }
 
   &__content {

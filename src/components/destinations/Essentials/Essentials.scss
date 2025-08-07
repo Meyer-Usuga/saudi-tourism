@@ -52,7 +52,7 @@
 
     p {
       margin: 0;
-      font-size: pxToRem(26px);
+      font-size: clamp(1.5rem, 2vw, 1.6rem);
     }
   }
 }

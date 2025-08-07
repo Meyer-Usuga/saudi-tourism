@@ -21,4 +21,10 @@
       margin: 0;
     }
   }
+
+  @include media-ltmd() {
+    h1 {
+      text-align: center;
+    }
+  }
 }

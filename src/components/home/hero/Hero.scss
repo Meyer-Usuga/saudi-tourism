@@ -61,11 +61,15 @@
 
     h1 {
       margin: 0;
-      font-size: pxToRem(78px);
+      font-size: clamp(3rem, 5vw, 4.9rem);
     }
 
     p {
-      font-size: pxToRem(20px);
+      font-size: clamp(1rem, 2vw, 1.25rem);
+    }
+
+    @include media-ltmd() {
+      max-width: pxToRem(350px);
     }
   }
 
@@ -83,7 +87,7 @@
 
   &__item {
     max-width: pxToRem(330px);
-
+    text-align: center;
     h3 {
       font-size: pxToRem(28px);
     }

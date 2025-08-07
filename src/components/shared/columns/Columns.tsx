@@ -11,7 +11,7 @@ const Columns = ({ children }: Props) => {
 
   return (
     <>
-      <div className="columns">{children}</div>
+      <section className="columns">{children}</section>
     </>
   );
 };
