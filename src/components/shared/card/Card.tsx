@@ -1,4 +1,6 @@
 import Avatar from "@components/shared/avatar/Avatar";
+import { useAnimationInView } from "@utils/hooks";
+import { AnimationClass } from "@utils/animations";
 import "./Card.scss";
 
 type Avatar = {
@@ -25,11 +27,20 @@ type Props = {
 
 const Card = ({ content, className }: Props) => {
   const { card } = content;
+  const { ref } = useAnimationInView({
+    class: AnimationClass.fadeIn,
+    threshold: 0,
+    repeat: false,
+  });
+
   return (
     <div className={`card-container ${className}`}>
       <article
-        className="card"
-        style={{ backgroundImage: `url(${card.background})` }}
+        ref={ref}
+        className="card animatedOpening"
+        style={
+          { "--bg-image": `url(${card.background})` } as React.CSSProperties
+        }
       >
         {card.title && card.subtitle && (
           <div className="card__header">

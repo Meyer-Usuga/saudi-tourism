@@ -8,31 +8,57 @@
 
 .banner {
   position: relative;
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   min-height: 50vh;
   width: 100%;
+  background: none;
+  --bg-image: url("");
 
   &.bg-arabia {
-    background-image: url("https://res.cloudinary.com/db1tp6eqg/image/upload/v1754022585/bg-3_huh4xc.png");
+    --bg-image: url("https://res.cloudinary.com/db1tp6eqg/image/upload/v1754022585/bg-3_huh4xc.png");
   }
 
   &.bg-ocean {
-    background-image: url("https://res.cloudinary.com/db1tp6eqg/image/upload/v1754027072/bg-5_h59rsw.png");
+    --bg-image: url("https://res.cloudinary.com/db1tp6eqg/image/upload/v1754027072/bg-5_h59rsw.png");
   }
 
   &.bg-desert {
-    background-image: url("https://res.cloudinary.com/db1tp6eqg/image/upload/v1754110120/neom-wTmGtmGQCjQ-unsplash_1_w7idm0.png");
+    --bg-image: url("https://res.cloudinary.com/db1tp6eqg/image/upload/v1754110120/neom-wTmGtmGQCjQ-unsplash_1_w7idm0.png");
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(1);
+    transition: transform 0.6s ease;
+  }
+
+  &:hover::before {
+    transform: scale(1.1);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.3);
   }
 
   &__title {
     font-size: clamp(1.5rem, 4vw, 3rem);
     margin-left: pxToRem(60px);
     max-width: pxToRem(320px);
+    color: $color-white;
   }
 
   &__button {

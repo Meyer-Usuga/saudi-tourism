@@ -1,5 +1,7 @@
 import Button from "@components/shared/button/Button";
 import "./Contact.scss";
+import { useAnimationInView } from "@utils/hooks";
+import { AnimationClass } from "@utils/animations";
 
 const Contact = () => {
   const buttonStyles = {
@@ -10,9 +12,15 @@ const Contact = () => {
     maxWidth: "150px",
   };
 
+  const { ref } = useAnimationInView({
+    class: AnimationClass.shakeX,
+    threshold: 0.5,
+    repeat: false,
+  });
+
   return (
     <section className="contact">
-      <article className="contact__card">
+      <article className="contact__card" ref={ref}>
         <p>Contact us on Whatsapp</p>
         <Button type="primary" size="small" styles={buttonStyles}>
           <span>Start Chat</span>

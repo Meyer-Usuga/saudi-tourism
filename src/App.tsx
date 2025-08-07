@@ -5,6 +5,7 @@ import { Footer } from "@components/shared/footer";
 import Home from "@pages/Home";
 import Destinations from "@pages/Destinations";
 import About from "@pages/About";
+import "animate.css";
 import "./App.scss";
 
 const App = () => {

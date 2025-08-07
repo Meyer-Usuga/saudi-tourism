@@ -23,6 +23,10 @@
     display: flex;
     list-style: none;
     gap: pxToRem(55px);
+
+    li:hover {
+      color: $color-primary;
+    }
   }
 
   &__item {

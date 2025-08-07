@@ -1,10 +1,18 @@
 import Avatar from "@components/shared/avatar/Avatar";
+import { useAnimationInView } from "@utils/hooks";
+import { AnimationClass } from "@utils/animations";
 import "./Review.scss";
 
 const Review = () => {
+  const { ref } = useAnimationInView({
+    class: AnimationClass.lightSpeedInRight,
+    threshold: 0,
+    repeat: false,
+  });
+
   return (
     <section className="review">
-      <article className="review__header">
+      <article ref={ref} className="review__header animatedOpening">
         <div className="review__titles">
           <h1>Hisma</h1>
           <h2>Desert</h2>
