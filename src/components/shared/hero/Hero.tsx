@@ -30,12 +30,12 @@ const Hero = (props: Props) => {
 
   return (
     <section className={`hero ${backgroundImage}`}>
-      <div ref={titleRef} className="hero__title">
+      <div ref={titleRef} className="hero__title animatedOpening">
         <h1>{title}</h1>
         <p>{subtitle}</p>
       </div>
 
-      <div ref={contentRef} className="hero__content">
+      <div ref={contentRef} className="hero__content animatedOpening">
         {content.length > 0 &&
           content.map((item, index) => (
             <article className="hero__item" key={index}>
