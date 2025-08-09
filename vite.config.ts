@@ -5,7 +5,7 @@ import react from "@vitejs/plugin-react";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/saudi-tourism/",
+  base: "https://meyer-usuga.github.io/saudi-tourism",
   css: {
     preprocessorOptions: {
       scss: {
