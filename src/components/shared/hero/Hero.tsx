@@ -1,8 +1,6 @@
 import { useAnimationInView } from "@utils/hooks";
-import "./Hero.scss";
 import { AnimationClass } from "@utils/animations";
-import { useRef } from "react";
-
+import "./Hero.scss";
 type content = {
   title: string;
   paragraph: string;

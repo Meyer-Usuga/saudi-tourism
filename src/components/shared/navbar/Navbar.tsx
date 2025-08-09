@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import { Button } from "@components/shared/button";
-import "./Navbar.scss";
+import { Button } from "@components/shared";
 import { useEffect } from "react";
+import "./Navbar.scss";
 
 type Props = {
   isOpen: boolean;
@@ -22,6 +22,7 @@ const Navbar = ({ isOpen, setIsOpen }: Props) => {
           src="https://res.cloudinary.com/db1tp6eqg/image/upload/v1753923743/logo_nyomzp.svg"
           alt="Web logo"
           onClick={() => navigate("/")}
+          loading="lazy"
         />
       </div>
 

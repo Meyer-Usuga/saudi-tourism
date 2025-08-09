@@ -1,8 +1,5 @@
-import Traditions from "@components/about/traditions/Traditions";
-import Hero from "@components/home/hero/Hero";
-import Banner from "@components/shared/banner/Banner";
-import Contact from "@components/shared/contact/Contact";
-import Payments from "@components/about/payments/Payments";
+import { Banner, Contact, Hero } from "@components/shared";
+import { Traditions, Payments } from "@components/about";
 import React from "react";
 
 const About = () => {

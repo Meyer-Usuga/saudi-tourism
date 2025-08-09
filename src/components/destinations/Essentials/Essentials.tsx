@@ -1,8 +1,7 @@
-import { Button } from "@components/shared/button";
-import "./Essentials.scss";
-import { Columns } from "@components/shared/columns";
+import { Button, Columns } from "@components/shared";
 import { AnimationClass } from "@utils/animations";
 import { useAnimationInView } from "@utils/hooks";
+import "./Essentials.scss";
 
 const Essentials = () => {
   const { ref: firstColumn } = useAnimationInView({
@@ -23,6 +22,7 @@ const Essentials = () => {
         <img
           src="https://res.cloudinary.com/db1tp6eqg/image/upload/v1754022195/arrow_z3jr2d.svg"
           alt="Button icon"
+          loading="lazy"
         />
       </Button>
     );

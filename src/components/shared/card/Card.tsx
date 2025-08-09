@@ -1,4 +1,4 @@
-import Avatar from "@components/shared/avatar/Avatar";
+import { Avatar } from "@components/shared";
 import { useAnimationInView } from "@utils/hooks";
 import { AnimationClass } from "@utils/animations";
 import "./Card.scss";

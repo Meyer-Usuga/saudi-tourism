@@ -1,7 +1,7 @@
-import Button from "@components/shared/button/Button";
-import "./Contact.scss";
 import { useAnimationInView } from "@utils/hooks";
 import { AnimationClass } from "@utils/animations";
+import { Button } from "@components/shared";
+import "./Contact.scss";
 
 const Contact = () => {
   const buttonStyles = {

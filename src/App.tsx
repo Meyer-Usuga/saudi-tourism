@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { StaticNavbar } from "@components/shared/navbar";
-import { Footer } from "@components/shared/footer";
+import { StaticNavbar, Footer } from "@components/shared";
 import Home from "@pages/Home";
 import Destinations from "@pages/Destinations";
 import About from "@pages/About";

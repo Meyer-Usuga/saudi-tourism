@@ -1,8 +1,5 @@
-import Essentials from "@components/destinations/essentials/Essentials";
-import Hero from "@components/home/hero/Hero";
-import Banner from "@components/shared/banner/Banner";
-import Contact from "@components/shared/contact/Contact";
-import Gallery from "@components/shared/gallery/Gallery";
+import { Hero, Banner, Contact, Gallery } from "@components/shared";
+import { Essentials } from "@components/destinations";
 import React from "react";
 
 const Destinations = () => {

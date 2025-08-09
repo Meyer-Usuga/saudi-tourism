@@ -1,4 +1,4 @@
-import { Columns } from "@components/shared/columns";
+import { Columns } from "@components/shared";
 import "./Payments.scss";
 
 const Payments = () => {

@@ -1,7 +1,4 @@
-import { Columns } from "@components/shared/columns";
-import { Title } from "@components/shared/title";
-import { Card } from "@components/shared/card";
-import { Button } from "@components/shared/button";
+import { Columns, Title, Card, Button } from "@components/shared";
 import "./Traditions.scss";
 
 const Traditions = () => {
@@ -32,6 +29,7 @@ const Traditions = () => {
         <img
           src="https://res.cloudinary.com/db1tp6eqg/image/upload/v1754022195/arrow_z3jr2d.svg"
           alt="Button icon"
+          loading="lazy"
         />
       </Button>
     );

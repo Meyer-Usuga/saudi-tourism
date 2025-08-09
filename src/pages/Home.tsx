@@ -1,8 +1,5 @@
-import Carousel from "@components/home/carousel/Carousel";
-import Hero from "@components/home/hero/Hero";
-import Review from "@components/home/review/Review";
-import Banner from "@components/shared/banner/Banner";
-import Gallery from "@components/shared/gallery/Gallery";
+import { Hero, Banner, Gallery } from "@components/shared";
+import { Carousel, Review } from "@components/home";
 import React from "react";
 
 const Home = () => {

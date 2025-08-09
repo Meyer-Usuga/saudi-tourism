@@ -1,5 +1,4 @@
-import { Card } from "@components/shared/card";
-import { Title } from "@components/shared/title";
+import { Card, Title } from "@components/shared";
 import "./Gallery.scss";
 
 const Gallery = () => {
